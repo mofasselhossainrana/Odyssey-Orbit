@@ -1,0 +1,54 @@
+/* Custom styles for subtle ambient animations and placeholder aesthetic */
+@keyframes subtleDrift {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-8px) scale(1.015); }
+}
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.35; filter: blur(30px); }
+  50% { opacity: 0.65; filter: blur(45px); }
+}
+.ambient-drift {
+  animation: subtleDrift 14s ease-in-out infinite;
+}
+.pulse-glow {
+  animation: pulseGlow 7s ease-in-out infinite;
+}
+
+/* Custom Blueprint Grid for Technical Asset Slots */
+.blueprint-grid {
+  background-size: 32px 32px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+.blueprint-crosshairs {
+  position: relative;
+}
+.blueprint-crosshairs::before, .blueprint-crosshairs::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+}
+.blueprint-crosshairs::before {
+  top: 12px; left: 12px;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.4);
+}
+.blueprint-crosshairs::after {
+  bottom: 12px; right: 12px;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-right: 1.5px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Star Canvas */
+#space-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
