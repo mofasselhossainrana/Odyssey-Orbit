@@ -1,0 +1,7 @@
+# Files kept in the repository but not deployed to Vercel (the website itself is
+# index.html + assets/ + stories/). Build tools and docs are not needed at runtime.
+tools/
+docs/
+share/
+README.md
+.gitattributes

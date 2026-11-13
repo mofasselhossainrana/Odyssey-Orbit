@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Odyssey &amp; Orbit — Abandoned, But Not Forgotten</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%80%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Hind+Siliguri:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head><body>
+<div id="bg"></div><canvas id="stars"></canvas><div id="planets"></div>
+
+<nav id="nav" aria-label="Main">
+  <div id="brand" title="Odyssey &amp; Orbit — Home"><img id="logo" alt="Odyssey &amp; Orbit"></div>
+  <div id="navc">
+    <a class="nl" href="#/" data-r="home"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 2 11.5h3V21h5.5v-6h3v6H19v-9.5h3z"/></svg><span class="tx">Home</span></a>
+<a class="nl" href="#/explorers" data-r="explorers"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm2.19 12.19L6 18l3.81-8.19L18 6z"/></svg><span class="tx">Explorers</span></a>
+    <a class="nl" href="#/archive" data-r="archive"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v5H3zm1 6h16v12H4zm5 3v2h6v-2z"/></svg><span class="tx">NASA Archive</span></a>
+    <a class="nl" href="#/about" data-r="about"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 2c-2.7 0-7 1.3-7 4v3h6.5v-3c0-1.4.6-2.6 1.6-3.6A10 10 0 0 0 8 13zm8 0c-3 0-7.5 1.5-7.5 4.5V20H23.5v-2.5C23.5 14.5 19 13 16 13z"/></svg><span class="tx">About</span></a>
+  </div>
+  <div id="navr">
+    <a class="nl gh" id="gh" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg><span class="tx">GitHub</span></a>
+  </div>
+</nav>
+<div id="toast"></div>
+
+<!-- HOME -->
+<section class="view" id="home"><div class="stage">
+  <div class="wrap">
+    <div class="nasabadge"><img src="assets/images/brand/nasa-badge.webp" alt="NASA Space Apps Challenge 2026" width="1671" height="941"></div>
+    <h1 class="titleimg"><img src="assets/images/brand/title.png" alt="Abandoned, But Not Forgotten" width="1581" height="834"></h1>
+    <p class="tag">“Meet the machines we left behind.”</p>
+    <div class="cta"><svg viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="200" cy="60" rx="194" ry="44" fill="none" stroke="#ffc94d" stroke-width="3.5" stroke-dasharray="300 90 260 180" stroke-linecap="round" opacity=".85"/></svg>
+      <button id="go"><span class="rk">🚀</span>Start Exploring<span class="cv">›</span></button></div>
+  </div>
+  <div id="hero"><div class="rock"><i style="left:22%;top:26%;width:13%;height:16%"></i><i style="left:52%;top:18%;width:9%;height:11%"></i><i style="left:70%;top:40%;width:15%;height:18%"></i><i style="left:38%;top:55%;width:8%;height:10%"></i></div><img id="heroImg" alt="Cartoon rover mascot waving"></div>
+</div>
+</section>
+
+<!-- ABOUT (its own page, opened from the navbar's "About" button) -->
+<section class="view" id="about" aria-labelledby="abTitle"><div class="abw"><div class="ab">
+  <header class="ab-head ab-rv">
+    <svg class="orbit" viewBox="0 0 900 300" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="450" cy="150" rx="440" ry="138" fill="none" stroke="#ffc94d" stroke-width="2.5" stroke-dasharray="420 120 300 260" stroke-linecap="round"/><circle cx="868" cy="112" r="7" fill="#ffe14d"/><circle cx="40" cy="196" r="5" fill="#8cf3ff"/></svg>
+    <h2 class="arc-title" id="abTitle">About <span>Odyssey &amp; Orbit</span></h2>
+    <p class="ab-tag">Every Object Has a Story. Every Mission Leaves a Legacy.</p>
+    <p class="arc-sub">We are Odyssey &amp; Orbit, a team passionate about space exploration and storytelling. We aim to uncover the forgotten stories of human-made objects left behind on the Moon and Mars.</p>
+  </header>
+  <div class="ab-prob">
+    <article class="ab-card met ab-rv"><span class="ic" aria-hidden="true">🌑</span><span class="ab-k">The Problem We Met</span><h3>Abandoned but Not Forgotten</h3><p>Humanity's missions to the Moon and Mars have left behind countless pieces of equipment. Yet, their stories, purposes, and historical significance often remain overlooked.</p></article>
+    <article class="ab-card fix ab-rv"><span class="ic" aria-hidden="true">🚀</span><span class="ab-k">The Problem We Addressed</span><h3>Turning Forgotten Objects into Stories</h3><p>We built an interactive website using NASA's publicly available data to explore discarded equipment on the Moon and Mars. By combining data with storytelling, we make these forgotten pieces of space history more accessible, engaging, and meaningful.</p></article>
+  </div>
+  <div class="ab-team">
+    <header class="ab-rv"><span class="ab-k">The Pillars Behind the Solution</span><h3 class="ab-h">Meet Our <span>Team</span></h3></header>
+    <ul class="ab-grid">
+      <li class="tm ab-rv"><div class="tm-ph"><div class="tm-face"><img class="c1" src="assets/images/team/team-1.webp" width="720" height="1600" alt="Nura Alom Tafim" loading="lazy"></div></div><div class="tx"><span class="tm-no">Member 01</span><h4>Nura Alom Tafim</h4><p>Team Leader &amp; Researcher</p></div></li>
+      <li class="tm ab-rv"><div class="tm-ph"><div class="tm-face"><img src="assets/images/team/team-2.jpg" width="480" height="480" alt="Mohammad Mofassel Hossain Chawdhury Rana" loading="lazy"></div></div><div class="tx"><span class="tm-no">Member 02</span><h4>Mohammad Mofassel Hossain Chawdhury Rana</h4><p>Web Developer &amp; UI/UX Designer</p></div></li>
+      <li class="tm ab-rv"><div class="tm-ph"><div class="tm-face"><img class="c3" src="assets/images/team/team-3.jpg" width="480" height="480" alt="Serajjammonir Sarkar Rifat" loading="lazy"></div></div><div class="tx"><span class="tm-no">Member 03</span><h4>Serajjammonir Sarkar Rifat</h4><p>Data Analyst</p></div></li>
+      <li class="tm ab-rv"><div class="tm-ph"><div class="tm-face"><img src="assets/images/team/team-4.jpg" width="480" height="480" alt="Nowrin Jahan Zemi" loading="lazy"></div></div><div class="tx"><span class="tm-no">Member 04</span><h4>Nowrin Jahan Zemi</h4><p>Scriptwriter &amp; Storyteller</p></div></li>
+      <li class="tm ab-rv"><div class="tm-ph"><div class="tm-face"><img src="assets/images/team/team-5.jpg" width="480" height="480" alt="Md. Arman Ali" loading="lazy"></div></div><div class="tx"><span class="tm-no">Member 05</span><h4>Md. Arman Ali</h4><p>Video Editor &amp; Visual Production Lead</p></div></li>
+    </ul>
+  </div>
+</div></div></section>
+
+<!-- EXPLORERS -->
+<button id="exBack" type="button" aria-label="Back to Home">← Back</button>
+<section class="view" id="explorers">
+  <div class="wrap">
+    <header class="xhead"><img id="xlogo" src="assets/images/brand/logo-explorers.png" width="669" height="373" alt="Odyssey &amp; Orbit"></header>
+    <div class="xbody">
+    <h2 class="pick"><span class="rk">🚀</span>Select a machine that you want to explore!</h2>
+    <div class="panels">
+      <div class="panel moon"><div class="tab"><b>MOON</b></div><div class="cards" id="moonCards"></div></div>
+      <div class="panel mars"><div class="tab"><b>MARS</b></div><div class="cards" id="marsCards"></div></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- NASA ARCHIVE -->
+<section class="view" id="archive">
+  <div class="wrap"><div class="arc">
+    <div class="arc-head">
+      <span class="arc-badge">🛰️ REAL PHOTOS FROM NASA</span>
+      <h2 class="arc-title">NASA <span>Archive</span></h2>
+      <p class="arc-sub">The machines in our stories left a trail of real photographs behind. Search NASA's own image library for any machine, mission or place, and open a photo to see it on NASA's website.</p>
+      <form class="arc-form" id="arForm" role="search">
+        <span class="ic" aria-hidden="true">🔭</span>
+        <input id="arQ" type="search" placeholder="Search NASA photos… e.g. Surveyor 3, Apollo 17, Ingenuity" aria-label="Search NASA photos" autocomplete="off" maxlength="120">
+        <button type="submit">🔍 Search</button>
+      </form>
+      <div class="arc-chips" id="arChips">Try:
+        <button type="button" class="moon" data-q="Surveyor 3">🌕 Surveyor 3</button>
+        <button type="button" class="moon" data-q="Apollo 17 Lunar Roving Vehicle">🌕 Apollo 17 Rover</button>
+        <button type="button" class="mars" data-q="Opportunity rover">🔴 Opportunity</button>
+        <button type="button" class="mars" data-q="Ingenuity helicopter">🔴 Ingenuity</button>
+        <button type="button" data-q="Moon surface">Moon</button>
+        <button type="button" data-q="Mars surface">Mars</button>
+      </div>
+    </div>
+    <div class="arc-status" id="arStatus" aria-live="polite"></div>
+    <div class="arc-grid" id="arGrid"></div>
+    <button class="arc-more" id="arMore" type="button" hidden>Show more photos</button>
+    <p class="arc-credit">Photos and text: <a href="https://images.nasa.gov/" target="_blank" rel="noopener noreferrer">NASA Image and Video Library</a>. Each photo opens on NASA's website in a new tab.</p>
+  </div></div>
+</section>
+
+<!-- STORY -->
+<section class="view" id="story"><iframe id="frame" title="Machine story" allow="autoplay; fullscreen"></iframe></section>
+<div id="fade"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/mascots.js"></script>
+<script src="assets/js/app.js"></script>
+</body></html>

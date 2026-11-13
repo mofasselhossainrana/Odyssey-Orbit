@@ -1,0 +1,15 @@
+# OS / OneDrive clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Python cache (created when running tools/build_pages.py)
+__pycache__/
+*.pyc
+
+# Output of the optional tools/bundle.py (single-file share copy)
+share/
+
+# Editor settings
+.vscode/
+.idea/
